@@ -30,7 +30,7 @@ public class Pixhub {
 		try    
 		
 		{	
-			
+		//Comments	
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", "My Phone");
 		caps.setCapability("udid", "ZW22265K8R"); //Give Device ID of your mobile phone
