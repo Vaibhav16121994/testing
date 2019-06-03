@@ -38,13 +38,13 @@ public class KaamPe {
 		AppiumDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 	    Thread.sleep(5000);
 	   
-	    driver.findElement(By.id("com.andesoftconsulting.kaam_pe:id/editTextMobileNumber")).sendKeys("9819957656");;
+	    driver.findElement(By.linkText("Mobile Number")).sendKeys("9819957656");;
 	    driver.hideKeyboard();
 	   
-	    driver.findElement(By.id("com.andesoftconsulting.kaam_pe:id/editTextMobileNumber")).sendKeys("1234");;
+	    driver.findElement(By.linkText("Password")).sendKeys("1234");;
 	    driver.hideKeyboard();
 	  
-	    driver.findElement(By.id("com.andesoftconsulting.kaam_pe:id/btnLogin")).click();
+	    driver.findElement(By.linkText("LOGIN")).click();
 	    Thread.sleep(5000);
 	    
 	    System.out.println("Donee!!");
