@@ -3,9 +3,10 @@ package appium;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
@@ -31,9 +32,11 @@ public static void main(String[] args) throws InterruptedException {
 		try    
 		
 		{				
-			
+			    Thread.sleep(5000);  
 			    AppiumDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
-				Thread.sleep(5000);
+		      
+			   // new WebDriverWait(driver,100).until(ExpectedConditions.elementToBeClickable(By.id("com.andesoft.matrixmobile:id/et_email_id")));
+			    Thread.sleep(5000);
 				driver.findElementById("com.andesoft.matrixmobile:id/et_email_id").sendKeys("debraj.das");
                 driver.hideKeyboard();
 				Thread.sleep(5000);

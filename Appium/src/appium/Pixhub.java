@@ -43,20 +43,15 @@ public class Pixhub {
 			    AppiumDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 				Thread.sleep(5000);	
 				
-				ArrayList<String> username=readexcel(0);
-				ArrayList<String> password=readexcel(1);
-				
-	            for(int i=0;i<username.size();i++)
-	            {
-	           
-		        driver.findElementById("com.andesoftconsulting.pixhub:id/editTextUserName").sendKeys(username.get(i));
+			
+		        driver.findElementById("com.andesoftconsulting.pixhub:id/editTextUserName").sendKeys("6161651616");
 				driver.hideKeyboard();
-				driver.findElementById("com.andesoftconsulting.pixhub:id/editTextPassword").sendKeys(password.get(i));
+				driver.findElementById("com.andesoftconsulting.pixhub:id/editTextPassword").sendKeys("994");
 				driver.hideKeyboard();
 				driver.findElementById("com.andesoftconsulting.pixhub:id/btnLogin").click();
 				Thread.sleep(5000);
 				
-	    }
+	    
 		}	
 			
 		catch(Exception e){
@@ -64,32 +59,7 @@ public class Pixhub {
 		}
 		}
 	
-	public ArrayList<String> readexcel(int colNo) throws IOException{
-		ArrayList<String> list=new ArrayList<String>();
-		try
-		
-		{
-		
-		File file=new File("C:\\Users\\VAIBHAV\\workspace\\Appium\\IDPASS.xlsx");
-		FileInputStream fis=new FileInputStream(file);
-		XSSFWorkbook wb=new XSSFWorkbook(fis);
-		XSSFSheet sheet=wb.getSheetAt(0);
-		Iterator<Row>row=sheet.iterator();
-		row.next();
-		
-		while(row.hasNext())
-		{
-	   
-	    list.add(row.next().getCell(colNo).getStringCellValue());
-		
-		}	
-	}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
-		return list;	
-	}
+	
 
 }
 

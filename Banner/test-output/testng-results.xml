@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57878" started-at="2019-03-29T10:23:21Z" finished-at="2019-03-29T10:24:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57878" started-at="2019-03-29T10:23:21Z" finished-at="2019-03-29T10:24:19Z">
+      <class name="ban.Econolease">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ban.Econolease@44c8afef]" name="beforeTest" is-config="true" duration-ms="22424" started-at="2019-03-29T10:23:21Z" finished-at="2019-03-29T10:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:ban.Econolease@44c8afef]" name="Login" duration-ms="14024" started-at="2019-03-29T10:23:44Z" finished-at="2019-03-29T10:23:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="NewLease()[pri:1, instance:ban.Econolease@44c8afef]" name="NewLease" duration-ms="21282" started-at="2019-03-29T10:23:58Z" finished-at="2019-03-29T10:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewLease -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ban.Econolease@44c8afef]" name="afterTest" is-config="true" duration-ms="125" started-at="2019-03-29T10:24:19Z" finished-at="2019-03-29T10:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- ban.Econolease -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

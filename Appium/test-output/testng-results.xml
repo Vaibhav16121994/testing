@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38004" started-at="2019-05-27T07:17:27Z" finished-at="2019-05-27T07:18:05Z">
+  <suite name="Default suite" duration-ms="38791" started-at="2019-05-31T05:32:17Z" finished-at="2019-05-31T05:32:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38004" started-at="2019-05-27T07:17:27Z" finished-at="2019-05-27T07:18:05Z">
+    <test name="Default test" duration-ms="38791" started-at="2019-05-31T05:32:17Z" finished-at="2019-05-31T05:32:56Z">
       <class name="appium.Pixhub">
-        <test-method status="PASS" signature="f()[pri:0, instance:appium.Pixhub@2eda0940]" name="f" duration-ms="37942" started-at="2019-05-27T07:17:27Z" finished-at="2019-05-27T07:18:05Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:appium.Pixhub@2eda0940]" name="f" duration-ms="38717" started-at="2019-05-31T05:32:17Z" finished-at="2019-05-31T05:32:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
